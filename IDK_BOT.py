@@ -16,7 +16,7 @@ from textblob import TextBlob
 from textblob.exceptions import NotTranslated
 
 
-bot = telebot.TeleBot('YOUR TELEGRAM TOKEN')
+bot = telebot.TeleBot('')
 logged_in_users = {}
 user_data = {}
 nltk.download('punkt')
@@ -863,7 +863,7 @@ def handle_start(message):
 def handle_message(message):
     if message.text == 'Мой создатель':
         bot.reply_to(
-            message, 'Мой создатель: @leonid_baxmut \nВы можете написать ему с любым вопросом :)')
+            message, 'Мой создатель: @mini_leonid \nВы можете написать ему с любым вопросом :)')
     elif message.text == "Меню":
         smile = "🛠️"
         bot.send_message(
